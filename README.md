@@ -8,7 +8,11 @@ Power on the gateway and wait ~2 minutes for the system to start up. The visit h
 
 ![Alt text](images/image.png)
 
-Once your device is paired with the gateway, you should see an output in the white terminal section indicating that. The `internet connection` status under [Step 2](#step-2) should also say `Connected` or `Not connected`. 
+Once your device is paired with the gateway, you should see an output in the white terminal section indicating that similar to the one below. 
+
+![Alt text](images/image-1.png)
+
+The `internet connection` status under [Step 2](#step-2) should also say `Connected` or `Not connected`. 
 
 Note: If the `internet connection` is `Unknown`, then there might be a bluetooth pairing issue. In that case, ty the pairing process again. Changing the browser might sometimes help. IPhone will not work for this, but MAC will (and pc + android).
 
@@ -24,7 +28,7 @@ This is a straight forward step. If you with to connect your enery gateway over 
 Note: The `internet connection` should say `Connected` when connected over ethernet. 
 
 ## Step 3 - Solana wallet setup
-To receive `SRC-tokens`, you need to enter your solana wallet ID. It is possible to skip this step for now, but we will require this information in the future. 
+To receive `SRC-tokens`, you need to enter your solana wallet ID. This is needed for you to receive your `SRC-tokens` and see your device on the explorer.
 
 ![Alt text](images/image-3.png)
 
