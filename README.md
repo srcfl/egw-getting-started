@@ -2,6 +2,8 @@
 
 This is a step-by-step guide on how to get started with your energy gateway. 
 
+![Alt text](/images/egw500.png)
+
 ## Step 1 - Bluetooth pairing
 
 Power on the gateway and wait ~10 minutes for the system to start up and fetch the latest firmware. The visit https://srcful-ble-client.azurewebsites.net/ to get started with the gateway configuration. 
