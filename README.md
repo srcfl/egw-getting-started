@@ -6,7 +6,9 @@ This is a step-by-step guide on how to get started with your energy gateway.
 
 ## Step 1 - Bluetooth pairing
 
-Power on the gateway and wait ~10 minutes for the system to start up and fetch the latest firmware. The visit https://srcful-ble-client.azurewebsites.net/ to get started with the gateway configuration. 
+First, make sure the gateway is connected to the internet with an Ethernet cable (just for the initial setup) and power on the gateway. Wait ~10 minutes for the system to start up and fetch the latest firmware. 
+
+Then remove the Ethernet cable if you want to connect to WiFi instead and visit https://start.srcful.io/ to get started with the gateway configuration. 
 
 ![Alt text](images/image.png)
 
@@ -20,7 +22,6 @@ Note: If the `internet connection` is `Unknown`, then there might be a bluetooth
 More info on this soon...
 
 Wait ~1 minute before moving on to the next step. 
-
 
 ## Step 2 - Network configuration
 This is a straight forward step. If you with to connect your enery gateway over ethernet, please skip this step. 
