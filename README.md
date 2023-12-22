@@ -7,10 +7,17 @@ This is a step-by-step guide on how to get started with your energy gateway.
 Step 0 and 1 are only needed if your gateway SD is damaged and you need to flash the firmware again. Skip step 0 and 1 if you just received your gateway and want to get started with the configuration.
 
 ## Step 0 - Download the firmware
-The latest firmware can be downloaded from [here](https://drive.google.com/drive/folders/1cm7MgV1rjV_jwhudiztI4Hnfl6CnyRbb?usp=drive_link).
+If your SD card is damaged or you want to flash the firmware again, you can download the firmware and flash it to your SD card. Below are the different firmwares and their corresponding gateway models:
+
+| Hardware | Firmware |
+| --- | --- |
+| Srcful Energy Gateway | [srcful-egw.img](https://drive.google.com/file/d/1Oa-XKZwZGY7xrMGAAt81Qn4FMCvqX9Rv/view?usp=drive_link) |
+| RAK hotspot v2 | [rak-srcful-egw.img](https://drive.google.com/file/d/1wkd7ED6-rkmPFGFnaIz0RuI1pTabiFMJ/view?usp=drive_link) |
+| --- | --- |
+
 
 ## Step 1 - Flashing the firmware
-The firmware can be flashed using Balena Etcher. Download and install Balena Etcher from [here](https://www.balena.io/etcher/). Connect the SD card to your computer and flash the firmware using Balena Etcher.
+The firmware can be flashed using, for example, Balena Etcher. Download and install Balena Etcher from [here](https://www.balena.io/etcher/). Connect the SD card to your computer and flash the firmware using Balena Etcher.
 
 ## Step 2 - Starting & pairing
 Make sure the gateway is connected to the internet with an Ethernet cable (just for the initial setup) and power on the gateway. Wait ~10 minutes for the system to start up and fetch the latest firmware.
@@ -58,4 +65,7 @@ We will, in the near future, have an option to scan the local network for invert
 
 Note: Currently, there is no way of knowing if the gateway is successfully reading and sending inverter data.. To confirm, please reach out to @damo030 on TG.
 
-Note: If running our simulator, then the modbus-server will start outputting data frequently. This is a sign that the gateway is successfully reading and sending "inverter" data.
+Note: If running our [inverter-simulator](https://github.com/srcfl/inverter-simulator), then the server will start outputting data frequently. This is a sign that the gateway is successfully reading and sending "inverter" data.
+
+## Step 6 - Add your gateway to the explorer
+More info on this soon...
