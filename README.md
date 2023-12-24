@@ -2,7 +2,7 @@
 
 This is a step-by-step guide on how to get started with your energy gateway using Bluetooth. 
 
-For manual configuration, please refer to the [API documentation](api.md).
+For manual configuration, please refer to the [API documentation](API.md).
 
 ![Alt text](/images/egw500.png)
 
