@@ -1,73 +1,83 @@
-# egw-getting-started
+# Energy Gateway: Getting Started
 
-This is a step-by-step guide on how to get started with your energy gateway using Bluetooth. 
+---
+**Important**
 
-For manual configuration, please refer to the [API documentation](API.md).
+- You will need a compatible inverter to connect your Energy Gateway. Please see our list of compatible inverters: https://docs.srcful.io/energy-gateway/compatible-inverter/
 
-![Alt text](/images/egw500.png)
+---
 
-Step 0 and 1 are only needed if your gateway SD is damaged and you need to flash the firmware again. Skip step 0 and 1 if you just received your gateway and want to get started with the configuration.
+This is a step-by-step guide on how to get started with your Energy Gateway using Bluetooth.
 
-## Step 0 - Download the firmware
-If your SD card is damaged or you want to flash the firmware again, you can download the firmware and flash it to your SD card. Below are the different firmwares and their corresponding gateway models:
+If you have a DIY Energy Gateway or RAK Helium Miner V2, follow [**this guide**](https://github.com/srcfl/egw-diy/blob/main/rak-hotspot-helium-iot-src-dual-mining.md) before proceeding with this guide.
 
-| Hardware | Firmware |
-| --- | --- |
-| Srcful Energy Gateway | [srcful-egw.img](https://drive.google.com/file/d/1Oa-XKZwZGY7xrMGAAt81Qn4FMCvqX9Rv/view?usp=drive_link) |
-| RAK hotspot v2 | [rak-srcful-egw.img](https://drive.google.com/file/d/1wkd7ED6-rkmPFGFnaIz0RuI1pTabiFMJ/view?usp=drive_link) |
-| --- | --- |
+## Step 1 - Starting and pairing
 
+Connect the Energy Gateway to the internet using an Ethernet cable, and power it on by connecting the power cable.
 
-## Step 1 - Flashing the firmware
-The firmware can be flashed using, for example, Balena Etcher. Download and install Balena Etcher from [here](https://www.balena.io/etcher/). Connect the SD card to your computer and flash the firmware using Balena Etcher.
+Wait **approximately 10-15 minutes** for the Energy Gateway to start up and fetch the latest firmware. 
 
-## Step 2 - Starting & pairing
-Make sure the gateway is connected to the internet with an Ethernet cable (just for the initial setup) and power on the gateway. Wait ~10 minutes for the system to start up and fetch the latest firmware.
+### Wi-Fi
 
-Then remove the Ethernet cable if you want to connect to WiFi instead and visit https://start.srcful.io/ to get started with the gateway configuration.
+If you wish to use Wi-Fi instead of Ethernet, you can remove the Ethernet cable at this point.
 
+### Pairing over Bluetooth
 
-![Alt text](https://github.com/srcfl/egw-getting-started/raw/main/images/image.png)
+---
+**Important!**
 
-Once your device is paired with the gateway, you should see an output in the white terminal section indicating that similar to the one below. 
+- iPhones **cannot** be used for this process as of right now.
 
-![Alt text](https://github.com/srcfl/egw-getting-started/raw/main/images/image-1.png)
+- You must have a **Solana Wallet** and a browser plugin (PC/Mac/Linux) like **Phantom** or **Solflare** or an app like Phantom or Solflare (Android) to be able to link your Wallet.
 
-The `internet connection` status under [Step 2](#step-2) should also say `Connected` or `Not connected`. 
+- Should you lose connection to your Energy Gateway during this process, you must refresh your browser window, and sometimes restart your Bluetooth. 
 
-Note: If the `internet connection` is `Unknown`, then there might be a bluetooth pairing issue. In that case, ty the pairing process again. Changing the browser might sometimes help. IPhone will not work for this, but MAC will (and pc + android).
-More info on this soon...
+---
 
-Wait ~1 minute before moving on to the next step. 
+Now you are ready to visit https://app.srcful.io to start pairing your Energy Gateway.
 
-## Step 3 - Network configuration
-This is a straight forward step. If you with to connect your enery gateway over ethernet, please skip this step. 
+* Start by clicking the "Select Wallet"-button to link your Solana Wallet:
 
-![Alt text](https://github.com/srcfl/egw-getting-started/raw/main/images/image-2.png)
+![step-1](images/step-1.png)
 
-Note: The `internet connection` should say `Connected` when connected over ethernet. 
+* Connect your Solana Wallet: 
 
-This may take a couple of minutes, so please wait for the status message to update before moving on to the next step. 
+![step-2](images/step-2.png)
 
-## Step 4 - Solana wallet setup
-To participate in token distribution, you need to have a solana wallet.
+* Start the pairing process by clicking the hamburger menu and selecting "Onboard New Gateway":
 
-This is needed for you to receive your `SRC-tokens` and see your device on the explorer. Add your wallet address and click `Set Wallet Config`.
+![step-3](images/step-3.png)
 
-![Alt text](https://github.com/srcfl/egw-getting-started/raw/main/images/image-3.png)
+* Finish the pairing process by selecting your Energy Gateway in the Bluetooth menu that pops up in your browser:
 
-Wait ~1 minute before moving on to the next step. 
+![step-4](images/step-4.png)
 
-## Step 5 - Inverter configuration
-Finally, enter the neccessary inverter details. The Gateway needs an `IP-address`, `port`, `modbus device address` and the `type` of the inverter. 
+**You have now successfully paired your Energy Gateway, and are now ready to move on to the next section - configuration!**
 
-We will, in the near future, have an option to scan the local network for inverters. But for now, users need to know the IP-address of their inverter.
+## Step 2 - Configuration
 
-![Alt text](https://github.com/srcfl/egw-getting-started/raw/main/images/image-4.png)
+---
+**Important!**
 
-Note: Currently, there is no way of knowing if the gateway is successfully reading and sending inverter data.. To confirm, please reach out to @damo030 on TG.
+- To find your inverter's IP address, please refer to your router admin page.
 
-Note: If running our [inverter-simulator](https://github.com/srcfl/inverter-simulator), then the server will start outputting data frequently. This is a sign that the gateway is successfully reading and sending "inverter" data.
+- For other information regarding your inverter, please refer to the inverter documentation.
 
-## Step 6 - Add your gateway to the explorer
-More info on this soon...
+---
+
+In this section, we will configure Wi-Fi (optional) and connect the Energy Gateway to an inverter.
+
+* Start by selecting your Wi-Fi network in the dropdown menu, and enter your password, and click Submit. You will see it's IP Address when it has successfully connected:
+
+![step-5](images/step-5.png)
+
+* Enter your Solana Wallet-Address, and click Submit: 
+
+![step-6](images/step-6.png)
+
+* Enter your Inverter information and click Submit:
+
+![step-7](images/step-7.png)
+
+**You have now successfully paired your Energy Gateway to your inverter!**
+
