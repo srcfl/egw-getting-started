@@ -32,6 +32,8 @@ If you wish to use Wi-Fi instead of Ethernet, you can remove the Ethernet cable 
 
 - Should you lose connection to your Energy Gateway during this process, you must refresh your browser window, and sometimes restart your Bluetooth. 
 
+- If you experience issues with several failed attempts or dropped connection, disconnect any other bluetooth devices that are paired to your computer or Android phone, then try again.
+
 ---
 
 Now you are ready to visit https://app.srcful.io to start pairing your Energy Gateway.
