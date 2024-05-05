@@ -83,3 +83,12 @@ In this section, we will configure Wi-Fi (optional) and connect the Energy Gatew
 
 **You have now successfully paired your Energy Gateway to your inverter!**
 
+## Step 3 - Location
+
+* Go to the location tab in the side menu.
+
+![step-8](images/step-8.png)
+
+* Set your location by entering your coordinates or click on the map, then press **Sign change**.
+
+![step-9](images/step-9.png)
