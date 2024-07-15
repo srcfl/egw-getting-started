@@ -34,6 +34,6 @@ Leave the rest of the fields as is, and let's check if we can connect to the inv
 
 - Click the **"Connect"** button to start the connection.
 
-![alt text](resources/qmodmaster_success.png)
+![alt text](images/qmodmaster_success.png)
 
 The status indicator at the bottom of the window should turn green if the connection is successful. If it remains red, then there is a connection issue and we recommend double-checking that Modbus TCP/IP is enabled on the inverter and that the IP address and port are correct.
