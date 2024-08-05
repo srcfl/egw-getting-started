@@ -1,9 +1,3 @@
----
-sidebar_label: '🛠️ Setup Guide: Energy Gateway'
-sidebar_position: 0
-sidebar_class_name: item1
----
-
 # Setup Guide: Energy Gateway
 
 ---
