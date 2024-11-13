@@ -20,6 +20,12 @@ Just a heads up, enabling Modbus TCP/IP on your solar inverter is key for using 
 
 Navigate to `Options` -> `Modbus TCP`
 
+> **Important note about Modbus**
+>
+> While **502** is the default port, other common ports for Modbus TCP are: **1502** (SolarEdge and others), **6607** (Huawei), **8899** (Deye and others). Be sure to test for multiple ports.
+>
+> This also applies to **Unit ID**, which can be set manually, often in the app or web interface where you can configure your inverter. If you have not set Unit ID yourself, try either Unit ID **1** or **0**.
+
 - **Slave IP:** Enter the solar inverter's IP address.
 - **TCP Port:** Use `502` (default for Modbus TCP).
 
